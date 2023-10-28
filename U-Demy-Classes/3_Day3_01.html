@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict MOde in JS</title>
+    <style>
+        body{
+            font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .question{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Activating Strict Mode in JS</h1> 
+    <hr>
+    <p class="question">What is Strict Mode?</p>
+
+        <p class="answer">Ans: It use to write a secure code in java script. <br> basically it's avoid us to introduce bugs into our code.<br>
+        eg:- developers write more reliable and error-free
+         code by catching common coding mistakes and 
+         "unsafe" actions. like below: <br></p>
+         <ul>
+            <li>Variables must be declared</li>
+            <li>Assignment to undeclared variables is not allowed: (In strict mode, assigning a value to a variable <br> that has not been declared will result in a ReferenceError.)</li>
+            <li>The this keyword behaves differently: <br> In non-strict mode, when a function is called without an explicit this context, it defaults to the global object (e.g., window in a web browser). In strict mode, this is set to undefined in such cases, which can help catch potential bugs.</li>
+            <br>
+            <li>And much more like this</li>
+         </ul>
+
+         <hr>
+
+         <p class="question">How to activate strict Mode in JS code ?</p>
+         <p class="answer">To enable strict moder in javaScript add the following line at the top of your script or function. <br> <b>"use strict"; </b> </p>
+         <hr>
+
+         <p class="question">How Strict Mode work ?</p>
+         <p class="answer">let hasDriversLicense = false; <br>
+            const passTest= true; <br>
+            if (passTest) hasDriverLicense=true; // In this line i forget s in hasDriver . <br>
+            // if i run it like this without strict mode it didn't show me the error in console. <br>
+            if (hasDriversLicense) console.log('I can Drive')
+            <br>
+            <br>
+            But if i activate Strict Mode it'll show me the error.</p> 
+            
+            <p>
+                'use strict'; <br>
+                let hasDriversLicense = false; <br>
+                const passTest= true; <br>
+                if (passTest) hasDriverLicense=true; <br>
+                if (hasDriversLicense) console.log('I can Drive') <br>
+
+                <b>Error: Uncaught ReferenceError: <br> hasDriverLicense is not defined</b>
+
+                <hr>
+            </p>
+            
+
+
+
+
+
+
+
+         <script src="3_Day3_01.mjs"></script>
+</body>
+</html>
